@@ -55,10 +55,11 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\CameraFollow360.cs" />
-     <Compile Include="Assets\Command.cs" />
-     <Compile Include="Assets\InputHandler.cs" />
-     <Compile Include="Assets\PlayerController.cs" />
+     <Compile Include="Assets\Scripts\CameraFollow360.cs" />
+     <Compile Include="Assets\Scripts\Command.cs" />
+     <Compile Include="Assets\Scripts\CreateWorldPrefab.cs" />
+     <Compile Include="Assets\Scripts\InputHandler.cs" />
+     <Compile Include="Assets\Scripts\PlayerController.cs" />
  <Reference Include="Unity.Timeline.Editor">
  <HintPath>D:/Unity/2019.1/Game Design Patterns/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
  </Reference>
