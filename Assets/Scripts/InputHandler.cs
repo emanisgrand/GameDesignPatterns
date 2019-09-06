@@ -37,22 +37,22 @@ public class InputHandler : MonoBehaviour
     {
 if (Input.GetKeyDown(KeyCode.Q))
         {
-            keyQ.Execute(anim, true);
+            keyQ.Execute(anim);
             oldCommands.Add(keyQ);
         }
         else if (Input.GetKeyDown(KeyCode.W))
         {
-            keyW.Execute(anim, true);
+            keyW.Execute(anim);
             oldCommands.Add(keyW);
         }
         else if (Input.GetKeyDown(KeyCode.E))
         {
-            keyE.Execute(anim, true);
+            keyE.Execute(anim);
             oldCommands.Add(keyE);
         }
         else if (Input.GetKeyDown(KeyCode.UpArrow))
         {
-            upArrow.Execute(anim, true);
+            upArrow.Execute(anim);
             oldCommands.Add(upArrow);
         }
 
@@ -70,7 +70,7 @@ if (Input.GetKeyDown(KeyCode.Q))
         {
             // a simple undo of the recorded commands
             Command c = oldCommands[oldCommands.Count - 1];
-            c.Execute(anim, false);   
+            c.Execute(anim);   
             //removes the parameter given to Execute. in this case: anim
             oldCommands.RemoveAt(oldCommands.Count -1);
         }
@@ -90,7 +90,7 @@ if (Input.GetKeyDown(KeyCode.Q))
         isReplaying = false;
         // check every command 
         for (int i=0; i<oldCommands.Count; i++){
-            oldCommands[i].Execute(anim, true);
+            oldCommands[i].Execute(anim);
             yield return new WaitForSeconds(1f);
         }
         isReplaying = false;

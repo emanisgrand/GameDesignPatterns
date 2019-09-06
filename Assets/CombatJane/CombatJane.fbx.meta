@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: f6dc86146eb5f43359992a9f0261d4c7
+guid: 79142ceceeb050b40920c364822ea887
 ModelImporter:
   serializedVersion: 25
   internalIDToNameTable:
@@ -521,32 +521,32 @@ ModelImporter:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: Bodymat
-    second: {fileID: 2100000, guid: c7bfced2d5b0d40858ec38935a389083, type: 2}
+    second: {fileID: 2100000, guid: b555700be820dce4ab159dd44998d44b, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: Bottommat
-    second: {fileID: 2100000, guid: b51c4ea111df74318baa568666e18906, type: 2}
+    second: {fileID: 2100000, guid: 63bef77643e44cf4ab60e10623e5f8b6, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: Eyewearmat
-    second: {fileID: 2100000, guid: 4ded6ef35c670483eadb629044b52163, type: 2}
+    second: {fileID: 2100000, guid: 26313648e47c63a4bbacbed4ff585e76, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: Glovemat
-    second: {fileID: 2100000, guid: a408f88fd2a7449c9a22dc58fa76a180, type: 2}
+    second: {fileID: 2100000, guid: 3dcdbedda0b6ac849ad809062f0175db, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: Shoesmat
-    second: {fileID: 2100000, guid: ef980bc2dcdc8478888cb984f2d3ea29, type: 2}
+    second: {fileID: 2100000, guid: 3a6c9b71f2ec113459d5bd81e2deaacd, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: Topmat
-    second: {fileID: 2100000, guid: 463e0b78148384d69ae9d11387a5c74f, type: 2}
+    second: {fileID: 2100000, guid: 1ec7dd5319f1b5642b84ccd56145dab4, type: 2}
   materials:
     importMaterials: 1
     materialName: 0
@@ -639,9 +639,9 @@ ModelImporter:
     blendShapeNormalImportMode: 1
     normalSmoothingSource: 0
   referencedClips:
-  - 6a86bf311fc4b4839884efc5aa50dee8
-  - c80403fc19d5e467e80658ce8c55783a
-  - a65bd822faa9a4a90be9297d43f8afec
+  - 0895e3eff4059794a8b90541b75d6e46
+  - 5bb85d7aba52efe4788667fb9096bfc9
+  - 80fe2bea4d84a2c4eaac54c4a37045ad
   importAnimation: 1
   copyAvatar: 0
   humanDescription:
