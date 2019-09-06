@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class InputHandler : MonoBehaviour
 {
-    public GameObject actor;
+    public GameObject actor; 
     Animator anim;
     Command keyQ, keyW, keyE, upArrow;
     List<Command> oldCommands = new List<Command>();

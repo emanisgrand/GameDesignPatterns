@@ -2,48 +2,46 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PlayerController : MonoBehaviour
-{
-    Animator anim;
-    float speed = 2.0f;
-    float rotationSpeed = 100.0f;
+public class PlayerController : MonoBehaviour {
 
-    // Start is called before the first frame update
-    void Start()
-    {
-        anim = this.GetComponent<Animator>();
+	Rigidbody rb;
+    public float speed = 10.0F;
+    float rotationSpeed = 50.0F;
+    Animator animator;
+    static public bool dead = false;
+
+    void Start(){
+        rb = this.GetComponent<Rigidbody>();
+        animator = GetComponentInChildren<Animator>();
+        animator.SetBool("Idling", true);
     }
-
+	
     // Update is called once per frame
-    void LateUpdate()
-    {
+	void FixedUpdate () {
+	
         float translation = Input.GetAxis("Vertical") * speed;
         float rotation = Input.GetAxis("Horizontal") * rotationSpeed;
-
-        // Make it move 10 meters per second instead of 10 meters per frame...
         translation *= Time.deltaTime;
         rotation *= Time.deltaTime;
+        Quaternion turn = Quaternion.Euler(0f,rotation,0f);
+        rb.MovePosition(rb.position + this.transform.forward * translation);
+        rb.MoveRotation(rb.rotation * turn);
 
-        if (Input.GetKeyUp(KeyCode.UpArrow) || Input.GetKeyUp(KeyCode.DownArrow) ||
-            Input.GetKeyUp(KeyCode.LeftArrow) || Input.GetKeyUp(KeyCode.RightArrow))
-            anim.SetBool("isWalking", false);
-        if (Input.GetKey(KeyCode.UpArrow) || Input.GetKey(KeyCode.DownArrow))
+        if(translation != 0) 
         {
-            anim.SetBool("isWalking", true);
-            transform.Translate(0, 0, translation);
+            animator.SetBool("Idling", false);
         }
-        if (Input.GetKey(KeyCode.LeftArrow) || Input.GetKey(KeyCode.RightArrow))
+        else
         {
-            anim.SetBool("isWalking", true);
-            transform.Rotate(0, rotation, 0);
+            animator.SetBool("Idling", true);
         }
 
-        if (Input.GetKeyDown(KeyCode.Space))
-            anim.SetTrigger("isJumping");
-        else if (Input.GetKeyDown(KeyCode.P))
-            anim.SetTrigger("isPunching");
-        else if (Input.GetKeyDown(KeyCode.K))
-            anim.SetTrigger("isKicking");
-            
+        if (dead)
+        {
+            animator.SetTrigger("isDead");
+            this.enabled = false;
+        }
+
+
     }
 }

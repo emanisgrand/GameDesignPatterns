@@ -55,11 +55,16 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\Imported\3D Game Kit - Environment Pack\Models\AIControl.cs" />
+     <Compile Include="Assets\Imported\SetPlantInfo.cs" />
+     <Compile Include="Assets\Imported\WorldManager.cs" />
      <Compile Include="Assets\Scripts\CameraFollow360.cs" />
      <Compile Include="Assets\Scripts\Command.cs" />
+     <Compile Include="Assets\Scripts\CreateCubeMesh.cs" />
      <Compile Include="Assets\Scripts\CreateWorldPrefab.cs" />
      <Compile Include="Assets\Scripts\InputHandler.cs" />
      <Compile Include="Assets\Scripts\PlayerController.cs" />
+     <None Include="Assets\Imported\3D Game Kit - Environment Pack\Shaders\Vegetation.shader" />
  <Reference Include="Unity.Timeline.Editor">
  <HintPath>D:/Unity/2019.1/Game Design Patterns/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
  </Reference>
