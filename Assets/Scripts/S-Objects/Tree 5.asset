@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: Tree 5
   m_EditorClassIdentifier: 
   plantName: Similar
-  plantThreat: 0
+  plantThreat: 3
   icon: {fileID: 2800000, guid: 19b6a5253ba02461f804c000197886ab, type: 3}

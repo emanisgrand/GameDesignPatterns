@@ -56,7 +56,6 @@
   </ItemGroup>
   <ItemGroup>
      <Compile Include="Assets\Imported\3D Game Kit - Environment Pack\Models\AIControl.cs" />
-     <Compile Include="Assets\Imported\SetPlantInfo.cs" />
      <Compile Include="Assets\Imported\WorldManager.cs" />
      <Compile Include="Assets\Scripts\CameraFollow360.cs" />
      <Compile Include="Assets\Scripts\Command.cs" />
@@ -66,10 +65,14 @@
      <Compile Include="Assets\Scripts\Plant.cs" />
      <Compile Include="Assets\Scripts\PlantData.cs" />
      <Compile Include="Assets\Scripts\PlayerController.cs" />
+     <Compile Include="Assets\Scripts\SetPlantInfo.cs" />
      <None Include="Assets\Shaders\Vegetation.shader" />
      <None Include="Assets\Imported\3D Game Kit - Environment Pack\Shaders\Vegetation.shader" />
  <Reference Include="Unity.Timeline.Editor">
  <HintPath>D:/Unity/2019.1/Game Design Patterns/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
+ </Reference>
+ <Reference Include="com.unity.multiplayer-hlapi.Editor">
+ <HintPath>D:/Unity/2019.1/Game Design Patterns/Library/ScriptAssemblies/com.unity.multiplayer-hlapi.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.TextMeshPro.Editor">
  <HintPath>D:/Unity/2019.1/Game Design Patterns/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
@@ -79,15 +82,6 @@
  </Reference>
  <Reference Include="Unity.CollabProxy.Editor">
  <HintPath>D:/Unity/2019.1/Game Design Patterns/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
- </Reference>
- <Reference Include="Unity.TextMeshPro">
- <HintPath>D:/Unity/2019.1/Game Design Patterns/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
- </Reference>
- <Reference Include="Unity.Analytics.DataPrivacy">
- <HintPath>D:/Unity/2019.1/Game Design Patterns/Library/ScriptAssemblies/Unity.Analytics.DataPrivacy.dll</HintPath>
- </Reference>
- <Reference Include="com.unity.multiplayer-hlapi.Editor">
- <HintPath>D:/Unity/2019.1/Game Design Patterns/Library/ScriptAssemblies/com.unity.multiplayer-hlapi.Editor.dll</HintPath>
  </Reference>
  <Reference Include="com.unity.multiplayer-weaver.Editor">
  <HintPath>D:/Unity/2019.1/Game Design Patterns/Library/ScriptAssemblies/com.unity.multiplayer-weaver.Editor.dll</HintPath>
@@ -100,6 +94,12 @@
  </Reference>
  <Reference Include="UnityEngine.SpatialTracking">
  <HintPath>D:/Unity/2019.1/Game Design Patterns/Library/ScriptAssemblies/UnityEngine.SpatialTracking.dll</HintPath>
+ </Reference>
+ <Reference Include="Unity.TextMeshPro">
+ <HintPath>D:/Unity/2019.1/Game Design Patterns/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
+ </Reference>
+ <Reference Include="Unity.Analytics.DataPrivacy">
+ <HintPath>D:/Unity/2019.1/Game Design Patterns/Library/ScriptAssemblies/Unity.Analytics.DataPrivacy.dll</HintPath>
  </Reference>
  <Reference Include="UnityEditor.XR.LegacyInputHelpers">
  <HintPath>D:/Unity/2019.1/Game Design Patterns/Library/ScriptAssemblies/UnityEditor.XR.LegacyInputHelpers.dll</HintPath>

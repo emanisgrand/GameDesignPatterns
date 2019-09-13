@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: Tree 1
   m_EditorClassIdentifier: 
   plantName: Creatively
-  plantThreat: 0
+  plantThreat: 1
   icon: {fileID: 2800000, guid: d8421f6eb0bf64ae1903dad405189235, type: 3}
