@@ -30,4 +30,11 @@ public class Plant : MonoBehaviour
         spi.threatLevel.text = info.Threat.ToString();
         spi.plantIcon.GetComponent<RawImage>().texture = info.Icon;  //requires namespace UnityEngine.UI
     }
+
+    private void OnCollisionEnter(Collision other) {
+        if (other.gameObject.tag == "Player" && info.Threat == PlantData.THREAT.High ){
+            PlayerController.dead = true;
+        }
+    }
+
 }

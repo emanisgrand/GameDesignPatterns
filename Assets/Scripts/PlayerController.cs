@@ -9,6 +9,8 @@ public class PlayerController : MonoBehaviour {
     float rotationSpeed = 50.0F;
     Animator animator;
     static public bool dead = false;
+    PlantData _plantData;
+
 
     void Start(){
         rb = this.GetComponent<Rigidbody>();
@@ -16,7 +18,12 @@ public class PlayerController : MonoBehaviour {
         animator.SetBool("Idling", true);
     }
 	
-    // Update is called once per frame
+   
+    void OnCollisionEnter(Collision other)
+    {
+             
+    }
+   
 	void FixedUpdate () {
 	
         float translation = Input.GetAxis("Vertical") * speed;
