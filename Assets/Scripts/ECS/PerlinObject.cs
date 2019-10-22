@@ -32,7 +32,7 @@ public class PerlinObject : MonoBehaviour {
 
             for (int x = 0; x < 10; x++) {
                 for (int z = 0; z < 10; z++) {
-                    var pos = math.transform(entityArray.Length, 
+                    var pos = math.transform(float4x4.identity, //this needs to reference the entity's LocalToWorld params
                         new float3 ( x, 
                                     noise.cnoise(new float2(x, z) * 0.21f), 
                                      z));   
