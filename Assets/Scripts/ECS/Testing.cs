@@ -44,7 +44,9 @@ public class Testing : MonoBehaviour {
             
             entityManager.SetComponentData(entity, 
                 new Translation {
-                        Value = new float3( Random.Range(-8f, 8f), Random.Range(-5, 5f), 0)
+                        Value = new float3( Random.Range(-8f, 8f), 
+                                            Random.Range(-5, 5f), 
+                                            0)
                 });
             
             entityManager.SetSharedComponentData(entity, 
@@ -62,7 +64,5 @@ public class Testing : MonoBehaviour {
              });
         }
         entityArray.Dispose();
-        
-//      entityManager.SetComponentData(entity, new LevelComponent{ level = 10} ); --before instantiating the array
     }
 }

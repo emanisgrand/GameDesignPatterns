@@ -72,8 +72,11 @@
     <Compile Include="Assets\Scripts\ECS\LevelUpSystem.cs" />
     <Compile Include="Assets\Scripts\ECS\MoverSystem.cs" />
     <Compile Include="Assets\Scripts\ECS\MoveSpeedComponent.cs" />
+    <Compile Include="Assets\Scripts\ECS\PerlinData.cs" />
+    <Compile Include="Assets\Scripts\ECS\PerlinObject.cs" />
     <Compile Include="Assets\Scripts\ECS\PerlinPosition.cs" />
     <Compile Include="Assets\Scripts\ECS\PerlinPositionProxy.cs" />
+    <Compile Include="Assets\Scripts\ECS\PerlinSystem.cs" />
     <Compile Include="Assets\Scripts\ECS\SpawnCar.cs" />
     <Compile Include="Assets\Scripts\ECS\SpawnCubes.cs" />
     <Compile Include="Assets\Scripts\ECS\Spawner.cs" />

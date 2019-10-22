@@ -23,7 +23,9 @@ public class SpawnerSystem : JobComponentSystem {
                 for (int z = 0; z < spawner.Ecols; z++) {
                     var instance = CommandBuffer.Instantiate(spawner.Prefab);
                     var pos = math.transform(location.Value,
-                        new float3(x, noise.cnoise(new float2(x, z) * 0.21f),
+                        new float3(
+                            x, 
+                            noise.cnoise(new float2(x, z) * 0.21f),
                             z));
                     
                     // take instance at the positionvalue and set that as a component 
