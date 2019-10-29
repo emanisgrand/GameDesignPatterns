@@ -7,11 +7,11 @@ This is an excercise in better understanding the principles of those patterns wi
 This project will be considered complete when all of the following patterns have been exemplified.
 
 
-- [ ] The Command Pattern
-- [ ] The Flyweight Pattern
+- [x] The Command Pattern
+- [x] The Flyweight Pattern (exploring ECS concepts)
 - [ ] The Observe Pattern
 - [ ] The Prototype Pattern
-- [ ] The Singleton Pattern (expliring ECS concepts)
+- [ ] The Singleton Pattern 
 - [ ] The State Pattern
 - [ ] The Object Pool
 
