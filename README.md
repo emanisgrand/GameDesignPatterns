@@ -1,4 +1,4 @@
-# GameProgrammingPatterns
+# Game Programming Patterns
 ## Implementing all of the most common programming patterns used in video games.
 
 This repository is an experiment in publishing the most commonly used programming patterns that appear in most video games. 
