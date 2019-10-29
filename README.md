@@ -6,7 +6,8 @@ This is an excercise in better understanding the principles of those patterns wi
 
 This project will be considered complete when all of the following patterns have been exemplified.
 
-### - [ ] The Command Pattern
+### 
+- [ ] The Command Pattern
 ### - [ ] The Flyweight Pattern
 ### - [ ] The Observe Pattern
 ### - [ ] The Prototype Pattern
